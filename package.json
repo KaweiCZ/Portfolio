@@ -1,12 +1,12 @@
 {
-  "name": "paralleum-web",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Paralleum Group s.r.o.",
+  "author": "Marek Tichý",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.13",
@@ -31,9 +31,6 @@
     "node-sass": "^6.0.1"
   },
   "dependencies": {
-    "@splidejs/splide": "^2.4.21",
-    "aos": "^2.3.4",
-    "modal-vanilla": "^0.9.0",
     "postcss": "^8.2.12"
   }
 }
