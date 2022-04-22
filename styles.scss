@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
 $NavLinks: #ffffff;
-
+$Desktop: 992px;
+$HeroText: #ffffff;
+$Buttons: #62b604;
+$ButtonText: #000000;
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +21,7 @@ body {
   flex-wrap: wrap;
   min-height: 60px;
   justify-content: space-between;
-  padding: 10px;
+  padding: 1rem;
 
   &__logo {
     height: 100%;
@@ -31,6 +34,10 @@ body {
 }
 
 .nav {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -38,6 +45,80 @@ body {
   }
   &__link {
     text-decoration: none;
+    color: $NavLinks;
+  }
+
+  &__list-item {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  &__menu-button {
+    width: 2rem;
+    color: $NavLinks;
+    background: none;
+    font-size: 2rem;
+    cursor: pointer;
+    @media screen and(min-width:$Desktop) {
+      display: none;
+    }
+  }
+
+  &__list--hidden {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    @media screen and(min-width:$Desktop) {
+      max-height: unset;
+    }
+  }
+}
+
+.hero {
+  width: 100%;
+  padding: 1rem;
+  &__img-wrapper {
+    width: 100%;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__heading {
+    margin-top: 0.5rem;
+    color: $HeroText;
+    font-size: 2rem;
+  }
+  &__sub-heading {
+    margin-top: 0.5rem;
+    color: $HeroText;
+    font-size: 1rem;
+  }
+  &__buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+  &__button {
+    background-color: $Buttons;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $ButtonText;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 25px;
+  }
+  &__button--ghost {
+    background: none;
+    border: 2px solid $Buttons;
     color: $NavLinks;
   }
 }

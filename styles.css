@@ -22,7 +22,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .header__logo {
@@ -34,6 +34,16 @@ body {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.nav {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .nav__list {
@@ -49,6 +59,104 @@ body {
 
 .nav__link {
   text-decoration: none;
+  color: #ffffff;
+}
+
+.nav__list-item {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.nav__menu-button {
+  width: 2rem;
+  color: #ffffff;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .nav__menu-button {
+    display: none;
+  }
+}
+
+.nav__list--hidden {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .nav__list--hidden {
+    max-height: unset;
+  }
+}
+
+.hero {
+  width: 100%;
+  padding: 1rem;
+}
+
+.hero__img-wrapper {
+  width: 100%;
+}
+
+.hero__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero__heading {
+  margin-top: 0.5rem;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.hero__sub-heading {
+  margin-top: 0.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.hero__buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.hero__button {
+  background-color: #62b604;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000000;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 25px;
+}
+
+.hero__button--ghost {
+  background: none;
+  border: 2px solid #62b604;
   color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */
