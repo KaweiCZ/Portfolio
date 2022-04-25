@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mainpage</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="/styles.css" />
     <script
       src="https://kit.fontawesome.com/1b38407a60.js"
@@ -14,7 +14,7 @@
 
   <body>
     <header class="header">
-      <a class="header__logo" href="/index.html">
+      <a class="header__logo" href="#">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="109"
@@ -59,7 +59,7 @@
             <a class="nav__link" href="/aboutme.html">O mně</a>
           </li>
           <li class="nav__list-item">
-            <a class="nav__link" href="/portfolio.html">Portfolio</a>
+            <a class="nav__link nav__link--active" href="/portfolio.html">Portfolio</a>
           </li>
           <li class="nav__list-item">
             <a class="nav__link" href="/experiencies.html">Zkušenosti</a>
@@ -70,29 +70,24 @@
         </ul>
       </nav>
     </header>
-    <section class="hero">
-      <div class="hero__img-wrapper" id="hero__img-wrapper-desktop">
-        <img
-          class="hero__img"
-          src="https://via.placeholder.com/400x600"
-          alt="avatar"
-        />
-      </div>
-      <div class="hero__content">
-        <div class="hero__texts">
-          <h1 class="hero__heading">
-            Zdravím, jsem<br />
-            Marek Tichý
-          </h1>
-          <h2 class="hero__sub-heading">Vývojář - Fotograf - Grafik</h2>
-        </div>
-        <div class="hero__buttons-wrapper">
-          <a class="hero__button" href="mailto:TichyM@gmail.com">
-            Kontaktujte mně
-          </a>
-          <a class="hero__button hero__button--ghost" href="#"> O mně </a>
-        </div>
-      </div>
+   <section class="hero__portfolio">
+     <div class="hero__portfolio-link-wrapper">
+       <a class="hero__portfolio-link" href="https://intraoral.cz/"> <img class="hero__portfolio-img" src="/images/intraoral.png" alt=""></a>
+       <p class="hero__portfolio-text">Web přinášející informace o novém intraorálním skeneru Aidite.</p>
+     </div>
+     <div>
+      <a href="#"></a>
+      <p></p>
+    </div>
+    <div>
+      <a href="#"></a>
+      <p></p>
+    </div>
+    <div>
+      <a href="#"></a>
+      <p></p>
+    </div>
+   </section>
     </section>
     <footer class="footer">&copy; Marek Tichý</footer>
     <script src="/script.js"></script>
