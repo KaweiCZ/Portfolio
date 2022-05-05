@@ -2,6 +2,7 @@
 
 $NavLinks: #ffffff;
 $Desktop: 992px;
+$Tablet: 768px;
 $HeroText: #ffffff;
 $Buttons: #62b604;
 $ButtonText: #000000;
@@ -333,29 +334,40 @@ body {
     margin-bottom: 1rem;
     color: $HeroText;
   }
-  &__text {
-    @media screen and(min-width:$Desktop) {
-      width: 50%;
-      margin: 0 auto;
-    }
-  }
 
   &__icons-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
+    column-gap: 1rem;
+    row-gap: 3rem;
+    margin-top: 3rem;
+
+    @media screen and(min-width:$Desktop) {
+      margin-top: 6rem;
+    }
   }
   &__icon {
     color: $HeroText;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    width: 50%;
+    align-items: flex-start;
+    flex: 0 0 calc(50% - 1rem);
+
+    @media screen and(min-width:556px) {
+      flex: 0 0 calc(calc(100% / 3) - 1rem);
+    }
+
+    @media screen and(min-width:$Tablet) {
+      flex: 0 0 calc(20% - 1rem);
+    }
   }
   &__icon-wrapper {
     width: 75px;
     height: 75px;
+    margin-left: 1.5rem;
   }
   &__icon-img {
     width: 100%;
@@ -367,6 +379,7 @@ body {
     font-size: 0.875rem;
     display: flex;
     align-items: center;
+    text-align: left;
     &::before {
       content: "";
       display: inline-block;
