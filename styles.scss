@@ -122,6 +122,7 @@ body {
     }
   }
   &__content {
+    margin-top: 2rem;
     @media screen and(min-width:$Desktop) {
       display: flex;
       justify-content: center;
@@ -209,7 +210,7 @@ body {
   }
 
   &__link {
-    width: 100%;
+    width: 95%;
     @media screen and(min-width:$Desktop) {
       width: 75%;
     }
@@ -306,6 +307,73 @@ body {
     @media screen and(min-width:$Desktop) {
       width: 50%;
       margin: 0 auto;
+    }
+  }
+}
+
+.experiencies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $HeroText;
+  max-width: 100%;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  align-items: center;
+  @media screen and(min-width:$Desktop) {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  &__heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: $HeroText;
+  }
+  &__text {
+    @media screen and(min-width:$Desktop) {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &__icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  &__icon {
+    color: $HeroText;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  &__icon-wrapper {
+    width: 75px;
+    height: 75px;
+  }
+  &__icon-img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  &__icon-text {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 2rem;
+      height: 3px;
+      background-color: $Buttons;
+      margin-right: 0.5rem;
     }
   }
 }

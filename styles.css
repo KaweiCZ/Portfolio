@@ -183,6 +183,10 @@ body {
   }
 }
 
+.hero__content {
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 992px) {
   .hero__content {
     display: -webkit-box;
@@ -330,7 +334,7 @@ body {
 }
 
 .portfolio__link {
-  width: 100%;
+  width: 95%;
 }
 
 @media screen and (min-width: 992px) {
@@ -484,5 +488,109 @@ body {
     width: 50%;
     margin: 0 auto;
   }
+}
+
+.experiencies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  max-width: 100%;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .experiencies {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+}
+
+.experiencies__heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 992px) {
+  .experiencies__text {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.experiencies__icons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.experiencies__icon {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.experiencies__icon-wrapper {
+  width: 75px;
+  height: 75px;
+}
+
+.experiencies__icon-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.experiencies__icon-text {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.experiencies__icon-text::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 3px;
+  background-color: #62b604;
+  margin-right: 0.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
