@@ -371,7 +371,7 @@ body {
   }
   &__icon-img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
   }
   &__icon-text {

@@ -594,8 +594,8 @@ body {
 
 .experiencies__icon-img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100%;
 }
 
